@@ -37,7 +37,7 @@ class SchoolMealApp {
     }
 
     async fetchMealData(date) {
-        const url = `	https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=T10&SD_SCHUL_CODE=9171012&MLSV_YMD=${date}`;
+        const url = `	https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=S10&SD_SCHUL_CODE=9171012&MLSV_YMD=${date}`;
         const response = await fetch(url);
         const text = await response.text();
         const parser = new DOMParser();
